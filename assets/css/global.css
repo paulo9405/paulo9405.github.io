@@ -121,3 +121,101 @@ p {
 }
 
 body { background-color: lightgreen; }
+
+
+
+
+/* ===============TEST ========== */
+
+/* Central Buttons */
+.fab-center {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  z-index: 1000;
+}
+
+.fab {
+  background-color: #40916C;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #2D6A4F;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Centraliza o conteúdo */
+.button-group {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Botões existentes */
+.fab {
+  background-color: #40916C;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #2D6A4F;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* === Animação === */
+@keyframes slideInUp {
+  0% {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.button-group .fab {
+  opacity: 0;
+  animation: slideInUp 0.8s ease forwards;
+}
+
+.button-group .fab:nth-child(1) { animation-delay: 0.2s; }
+.button-group .fab:nth-child(2) { animation-delay: 0.4s; }
+.button-group .fab:nth-child(3) { animation-delay: 0.6s; }
+.button-group .fab:nth-child(4) { animation-delay: 0.8s; }
+.button-group .fab:nth-child(5) { animation-delay: 1s; }
+.button-group .fab:nth-child(6) { animation-delay: 1.2s; }
+.button-group .fab:nth-child(7) { animation-delay: 1.4s; }
+.button-group .fab:nth-child(8) { animation-delay: 1.6s; }
+
+
+/* ===============TEST ========== */

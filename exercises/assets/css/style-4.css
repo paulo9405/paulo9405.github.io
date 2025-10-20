@@ -350,6 +350,35 @@ img {
     height: 100%;
 }
 
+/* ===============TEST ========== */
+/* Floating Buttons */
+.fab-container {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
 
+.fab {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #0056b3;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* ===============TEST ========== */
 
 
