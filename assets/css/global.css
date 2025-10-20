@@ -132,7 +132,113 @@ body {
 
 /* ===============TEST ========== */
 
-/* Central Buttons */
+/* =======================
+   1. MAIN CONTAINER LAYOUT
+   ======================= */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;  /* Vertically centered */
+  align-items: center;      /* Horizontally centered */
+  min-height: 100vh;        /* Full viewport height */
+  text-align: center;
+  gap: 40px;                /* Space between text and buttons */
+}
+
+
+/* =======================
+   2. TEXT STYLES
+   ======================= */
+.hero-text h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #081c15;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1s ease forwards; /* Smooth title entry */
+}
+
+.hero-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #2d6a4f;
+  margin-bottom: 1rem;
+  animation: fadeInDown 1.3s ease forwards; /* Slight delay */
+}
+
+.hero-text h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  animation: fadeInDown 1.6s ease forwards; /* More delay */
+}
+
+.hero-text p {
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+}
+
+/* Add light shadow to improve readability */
+.hero-container h1, 
+.hero-container h2, 
+.hero-container p {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+
+/* =======================
+   3. BUTTON LAYOUT & STYLE
+   ======================= */
+
+/* Buttons container (centered horizontally) */
+.button-group {
+  display: flex;
+  flex-wrap: wrap;          /* Allow line breaks on smaller screens */
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* General button style */
+.fab {
+  background-color: #40916C;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  opacity: 0; /* Start invisible (for animation) */
+  animation: slideInUp 0.8s ease forwards; /* Entry animation */
+}
+
+/* Hover effect */
+.fab:hover {
+  background-color: #74c69d;
+  color: #081c15;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Animation delay for cascading effect */
+.button-group .fab:nth-child(1) { animation-delay: 0.2s; }
+.button-group .fab:nth-child(2) { animation-delay: 0.4s; }
+.button-group .fab:nth-child(3) { animation-delay: 0.6s; }
+.button-group .fab:nth-child(4) { animation-delay: 0.8s; }
+.button-group .fab:nth-child(5) { animation-delay: 1s; }
+.button-group .fab:nth-child(6) { animation-delay: 1.2s; }
+.button-group .fab:nth-child(7) { animation-delay: 1.4s; }
+.button-group .fab:nth-child(8) { animation-delay: 1.6s; }
+
+
+/* =======================
+   4. TEST - CENTRAL FLOATING BUTTONS
+   (Optional section you used before)
+   ======================= */
 .fab-center {
   position: fixed;
   top: 50%;
@@ -145,83 +251,12 @@ body {
   z-index: 1000;
 }
 
-.fab {
-  background-color: #40916C;
-  color: white;
-  text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
 
-.fab:hover {
-  background-color: #2D6A4F;
-  transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-/* main container: centralize everything */
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center; /* Centralize vertical */
-  align-items: center;     /* Centralize horizontal */
-  min-height: 100vh;       /* use all top of the screen */
-  text-align: center;
-  gap: 40px; /* space beteewn buttons and letters*/
-}
+/* =======================
+   5. ANIMATIONS
+   ======================= */
 
-/* Texto centralizado */
-.hero-text h1 {
-  font-size: 3rem;
-  color: #1b4332;
-  margin-bottom: 10px;
-}
-
-.hero-text h2 {
-  font-size: 1.8rem;
-  color: #2d6a4f;
-  margin-bottom: 20px;
-}
-
-.hero-text p {
-  color: #333;
-  max-width: 600px;
-  margin: 0 auto 10px auto;
-}
-
-
-/* Centralize */
-.button-group {
-  display: flex;
-  flex-wrap: wrap; /* quebra linha se a tela for pequena */
-  justify-content: center;
-  gap: 15px;
-  margin-top: 20px;
-}
-
-/* Botões existentes */
-.fab {
-  background-color: #40916C;
-  color: white;
-  text-decoration: none;
-  padding: 15px 40px;
-  border-radius: 50px;
-  font-weight: bold;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
-}
-
-.fab:hover {
-  background-color: #74c69d;
-  color: #081c15;
-  transform: translateY(-5px) scale(1.05);
-}
-
-/* === Animação === */
+/* Slide up for buttons */
 @keyframes slideInUp {
   0% {
     transform: translateY(40px);
@@ -233,47 +268,23 @@ body {
   }
 }
 
-/* page blink together  */
+/* Fade-in for page entry (optional global animation) */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-.button-group .fab {
-  opacity: 0;
-  animation: slideInUp 0.8s ease forwards;
+/* Fade down for hero text */
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.button-group .fab:nth-child(1) { animation-delay: 0.2s; }
-.button-group .fab:nth-child(2) { animation-delay: 0.4s; }
-.button-group .fab:nth-child(3) { animation-delay: 0.6s; }
-.button-group .fab:nth-child(4) { animation-delay: 0.8s; }
-.button-group .fab:nth-child(5) { animation-delay: 1s; }
-.button-group .fab:nth-child(6) { animation-delay: 1.2s; }
-.button-group .fab:nth-child(7) { animation-delay: 1.4s; }
-.button-group .fab:nth-child(8) { animation-delay: 1.6s; }
-
-
-.hero-container h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  color: #081c15;
-  margin-bottom: 0.5rem;
-}
-
-.hero-container h2 {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.6rem;
-  color: #2d6a4f;
-  margin-bottom: 1rem;
-}
-
-
-.hero-container h1, 
-.hero-container h2, 
-.hero-container p {
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
 
 /* ===============TEST ========== */
