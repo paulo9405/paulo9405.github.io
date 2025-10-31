@@ -288,3 +288,175 @@ body {
 
 
 /* ===============TEST ========== */
+
+/* ======================
+   FOOTER SECTION
+   ====================== */
+
+.footer-dual {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  color: #eee;
+  text-align: center;
+  padding: 25px 10px;
+  font-size: 0.95rem;
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Texto principal */
+.footer-dual p {
+  margin: 0;
+  color: #cde8cf;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.footer-dual strong {
+  color: #74c69d;
+  font-weight: 600;
+}
+
+/* Social Links */
+.footer-social {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 8px 16px;
+  border-radius: 30px;
+  color: #74c69d;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #95d5b2;
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .footer-dual {
+    padding: 20px 15px;
+  }
+
+  .footer-social {
+    gap: 14px;
+  }
+
+  .footer-social a {
+    font-size: 1rem;
+    padding: 10px 18px;
+  }
+}
+
+/* ======= BACKGROUND IMAGE ======= */
+.hero-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("../img/backg.jpg") center / cover no-repeat;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55); 
+  z-index: 1;
+}
+
+
+
+/* =============================
+   COLOR FIXES FOR DARK BACKGROUND
+   ============================= */
+
+/* Texto da seção hero */
+.hero-text h1,
+.hero-text h2,
+.hero-text h3 {
+  color: #f8f9fa; /* branco suave */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* Título principal */
+.hero-text h1 {
+  font-size: var(--fs-xxxl);
+  color: #ffffff; /* branco puro pra destaque */
+}
+
+/* Subtítulo */
+.hero-text h2 {
+  color: #dcdcdc; /* cinza leve */
+}
+
+/* Texto menor */
+.hero-text h3 {
+  color: #d1d1d1; /* cinza mais escuro */
+}
+
+/* Texto geral */
+p {
+  color: #e0e0e0;
+}
+
+/* Botões principais */
+.fab {
+  background-color: #c27a2c; /* dourado queimado */
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: all 0.3s ease;
+}
+
+.fab:hover {
+  background-color: #f4a261; /* laranja claro */
+  color: #1d1d1d; /* contraste no hover */
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste de cores do footer */
+.footer-dual {
+  background: rgba(0, 0, 0, 0.85);
+  color: #ccc;
+}
+
+.footer-dual strong {
+  color: #74c69d; /* verde menta (mantém a identidade) */
+}
+
+.footer-social a {
+  color: #e9c46a; /* dourado suave */
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.footer-social a:hover {
+  color: #f4a261;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Fallback caso imagem de fundo falhe */
+body {
+  background-color: #000;
+  color: #dcdcdc;
+}
+
+
