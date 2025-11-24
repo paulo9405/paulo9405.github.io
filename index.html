@@ -1,58 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Paulo | Creative Digital Designer</title>
-  <meta name="description" content="Hi, I'm Paulo Souza, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Souza | Web Designer and Developer</title>
+    <meta name="description" content="Hi, I'm Paulo Souza, a UI & UX designer based in Dublin. Mobile and Responsive Web Design, eCommerce Websites, Branding and Logo Design.">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/global.css">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
-  <link rel="manifest" href="assets/img/favicons/site.webmanifest">
-  <link rel="icon" href="assets/img/favicons/pikachu.png">
-
-  <!-- Paulo Souza 76011 -->
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="icon" href="assets/img/favicons/pikachu.png">
 </head>
-
 <body>
-  <!-- Hero Section -->
-  <div class="hero-container">
-    <div class="hero-text">
-      <h1>Paulo Souza</h1>
-      <h2>Web / UI Designer</h2>
-      <h3>I created this website to showcase some of my recent web design work.</h3>
-      <h3>We deliver digital success to showcase your business at its best.</h3>
-    </div>
 
-    <!-- Project Links -->
-    <div class="button-group">
-      <a href="exercises/page-1.html" class="fab">A Tale of Two Cities</a>
-      <a href="exercises/page-2.html" class="fab">Purple Rain</a>
-      <a href="exercises/page-3.html" class="fab">Web Page with Sections</a>
-      <a href="exercises/page-4.html" class="fab">Vincent van Gogh</a>
-      <a href="exercises/page-5.html" class="fab">Ireland's Top Five Visitor Attractions</a>
-      <a href="exercises/hero-text.html" class="fab">Hero Block with Animated Text</a>
-      <a href="exercises/hero-image.html" class="fab">Hero Block with Background Image</a>
-      <a href="exercises/hero-video.html" class="fab">Hero Block with Background Video</a>
-    </div>
-  </div>
+    <!-- Navigation -->
+    <nav class="theme-dark">
+        <div class="container-menu">
+            <a href="index.html">
+                <img src="assets/img/website-logo-sample.png" alt="Paulo Souza Logo">
+            </a>
+            <ul class="links-wrapper">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio/index.html">Portfolio</a></li>
+                <li><a href="contact/index.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <footer class="footer-dual">
-  <p>© 2025 <strong>Paulo Souza</strong> — Creative Web Designer & Frontend Developer</p>
+    <!-- Hero Section -->
+    <header class="hero-block theme-dark">
+        <div class="container-block">
+            <div class="col-text">
+                <h1>Paulo Souza</h1>
+                <h2>Web / UI Designer</h2>
+                <p>I create this website to showcase some of my recent web design work. We deliver digital success to showcase your business at its best.</p>
+                <div class="hero-buttons">
+                    <a href="portfolio/index.html" class="btn-cta">View my work</a>
+                    <a href="contact/index.html" class="btn-cta">Get in touch</a>
+                </div>
+            </div>
+            <div class="col-img">
+                <img src="assets/img/project-hero.png" alt="Web design projects showcase">
+            </div>
+        </div>
+    </header>
 
-  <div class="footer-social">
-    <a href="https://www.linkedin.com/in/paulogomesdev/" target="_blank" aria-label="LinkedIn">💼 LinkedIn</a>
-    <a href="https://github.com/paulo9405" target="_blank" aria-label="GitHub">💻 GitHub</a>
-    <a href="https://www.instagram.com/paulo_gso/" target="_blank" aria-label="Instagram">📷 Instagram</a>
-  </div>
-</footer>
+    <!-- Main Content -->
+    <main>
+        <!-- Recent Projects Section -->
+        <section class="container-flex theme-dark">
+            <div class="col-1 text-center">
+                <h2>Recent projects</h2>
+                <h3>Below you can see a selection of my recent web design and development projects.</h3>
+            </div>
 
+            <!-- Project Cards -->
+            <div class="flex-cols-3">
+                <!-- Project 1: Fashion -->
+                <div class="col-3">
+                    <figure>
+                        <a href="portfolio/fashion/index.html">
+                            <img src="assets/img/project-fashion.jpg" alt="Snazzy Fashion project">
+                        </a>
+                    </figure>
+                    <h3>Snazzy Fashion</h3>
+                    <p>A web page for a fashion retailer featuring background video with eye-catching typography.</p>
+                    <a href="portfolio/fashion/index.html" class="btn-solid">View project</a>
+                </div>
 
+                <!-- Project 2: Smoothies -->
+                <div class="col-3">
+                    <figure>
+                        <a href="portfolio/smoothies/index.html">
+                            <img src="assets/img/project-smoothie.jpg" alt="Smooth Smoothies project">
+                        </a>
+                    </figure>
+                    <h3>Smooth Smoothies</h3>
+                    <p>A multi-column flexbox page layout and hero block with a background image.</p>
+                    <a href="portfolio/smoothies/index.html" class="btn-solid">View project</a>
+                </div>
+
+                <!-- Project 3: Crypto Wallet -->
+                <div class="col-3">
+                    <figure>
+                        <a href="portfolio/crypto-wallet/index.html">
+                            <img src="assets/img/project-crypto-wallet.jpg" alt="Crypto Wallet project">
+                        </a>
+                    </figure>
+                    <h3>Crypto Wallet</h3>
+                    <p>A dark-themed, single-page website for a fictitious crypto wallet.</p>
+                    <a href="portfolio/crypto-wallet/index.html" class="btn-solid">View project</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-dual theme-dark">
+        <h2>Paulo Souza</h2>
+        <h3>Web / UI Designer</h3>
+
+        <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="portfolio/index.html">Portfolio</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+        </ul>
+
+        <ul class="footer-icons">
+            <li><a href="https://www.linkedin.com/in/paulogomesdev/" target="_blank" aria-label="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+            </a></li>
+            <li><a href="https://github.com/paulo9405" target="_blank" aria-label="GitHub">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+            <li><a href="https://www.instagram.com/paulo_gso/" target="_blank" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a></li>
+        </ul>
+
+        <p class="privacy-legal">
+            <a href="privacy.html">Privacy &amp; Legal</a>
+        </p>
+
+        <p>© 2025 <strong>Paulo Souza</strong> — Creative Web Designer & Frontend Developer</p>
+    </footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 </body>
 </html>
