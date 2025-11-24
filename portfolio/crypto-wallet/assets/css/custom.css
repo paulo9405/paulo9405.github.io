@@ -1,0 +1,31 @@
+/* ============================================ */
+/* CRYPTO WALLET - CUSTOM STYLES */
+/* Paulo Souza - 76011 */
+/* ============================================ */
+
+/* Base Typography */
+body {
+    font-family: 'Outfit', sans-serif;
+}
+
+header h1 {
+    font-size: var(--font-size-xxxl);
+}
+
+/* Section headings - font-weight 400 (not bold) */
+.section-selector-1 h2,
+.section-selector-2 h2,
+.section-selector-3 h2,
+.section-selector-4 h2 {
+    font-weight: 400;
+}
+
+/* Badge uppercase styling */
+.section-selector-1 > .badge span {
+    text-transform: uppercase;
+}
+
+/* ============================================ */
+/* Sections will be added here as we build */
+/* with Lunevedy */
+/* ============================================ */
